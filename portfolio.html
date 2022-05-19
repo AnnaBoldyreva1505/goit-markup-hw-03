@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" /> -->
-            <!-- это для кросс браузерности -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" /> -->
+    <!-- это для кросс браузерности -->
     <link rel="stylesheet" href="./css/styles.css">
     <title>Портфолио</title>
 </head>
+
 <body>
     <!-- Navigation -->
     <header class="menu">
         <div class="container header-container">
             <nav>
-                <a class="link" href="index.html" lang="en"><span class="logo-link logo-link-first">Web</span><span class="logo-link logo-link-header">Studio</span> </a>
+                <a class="link" href="index.html" lang="en"><span class="logo-link logo-link-first">Web</span><span
+                        class="logo-link logo-link-header">Studio</span> </a>
                 <ul class="menu-item list">
                     <li>
                         <a class="menu-item-nav link" href="index.html">Студия</a>
@@ -42,145 +46,116 @@
         </div>
     </header>
 
-        <!-- main - для уникальной информации -->
+    <!-- main - для уникальной информации -->
     <main>
         <!-- filter section-->
         <!-- <h1>Наши работы</h1> его на макете нет, пока не знаю как скрыть его в css -->
-        <section class="portfolio">
-            <ul class="list">
-               <li>
-                   <button class="btn nav" type="button">Все</button>
-                </li>
-               <li>
-                   <button class="btn nav" type="button">Веб-сайты</button>
-                </li>  
-               <li>
-                   <button class="btn nav" type="button">Приложения</button>
-                </li> 
-               <li>
-                   <button class="btn nav" type="button">Дизайн</button>
-                </li> 
-               <li>
-                   <button class="btn nav" type="button">Маркетинг</button>
-                </li> 
-            </ul>
+        <section class="portfolio section">
+            <div class="container">
+                <ul class="portfolio-btn list">
+                    <li>
+                        <button class="btn nav" type="button">Все</button>
+                    </li>
+                    <li>
+                        <button class="btn nav" type="button">Веб-сайты</button>
+                    </li>
+                    <li>
+                        <button class="btn nav" type="button">Приложения</button>
+                    </li>
+                    <li>
+                        <button class="btn nav" type="button">Дизайн</button>
+                    </li>
+                    <li>
+                        <button class="btn nav" type="button">Маркетинг</button>
+                    </li>
+                </ul>
 
-            <ul class="portfolio-nav list">
-                <li>
-                    <a class="link" href="">   
-                    <img 
-                    src="./images/portfolio/technokryak.jpg" 
-                    width="370" 
-                    height="294" 
-                    alt="Пример">
-                    <h2 class="header">Технокряк</h2>
-                    <p class="paragraf">Веб-сайт</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="">
-                    <img 
-                    src="./images/portfolio/neworlean-vs-goldenttar.jpg" 
-                    width="370"
-                     height="294" 
-                     alt="Пример">
-                    <h2 class="header">Постер New Orlean vs Golden Star</h2>
-                    <p class="paragraf">Дизайн</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="">
-                    <img 
-                    src="./images/portfolio/seafood.jpg" 
-                    width="370" 
-                    height="294" 
-                    alt="Пример">
-                    <h2 class="header">Ресторан Seafood</h2>
-                    <p class="paragraf">Приложение</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="">
-                    <img 
-                    src="./images/portfolio/prime.jpg" 
-                    width="370" 
-                    height="294" 
-                    alt="Пример">
-                    <h2 class="header">Проект Prime</h2>
-                    <p class="paragraf">Маркетинг</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="">
-                    <img 
-                    src="./images/portfolio/boxes.jpg" 
-                    width="370" 
-                    height="294" 
-                    alt="Пример">
-                    <h2 class="header">Проект Boxes</h2>
-                    <p class="paragraf">Приложение</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="">
-                    <img 
-                    src="./images/portfolio/inspiration-has-no-borders.jpg"
-                    width="370" 
-                    height="294" 
-                    alt="Пример">
-                    <h2 class="header">Inspiration has no Borders</h2>
-                    <p class="paragraf">Веб-сайт</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="">
-                    <img 
-                    src="./images/portfolio/limited-edition.jpg" 
-                    width="370" 
-                    height="294" 
-                    alt="Пример">
-                    <h2 class="header">Издание Limited Edition</h2>
-                    <p class="paragraf">Дизайн</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="">
-                    <img 
-                    src="./images/portfolio/Lab.jpg" 
-                    width="370" 
-                    height="294" 
-                    alt="Пример">
-                    <h2 class="header">Проект LAB</h2>
-                    <p class="paragraf">Маркетинг</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="">
-                    <img 
-                    src="./images/portfolio/growing-business.jpg" 
-                    width="370" 
-                    height="294" 
-                    alt="Пример">
-                    <h2 class="header">Growing Business</h2>
-                    <p class="paragraf">Приложение</p>
-                    </a>
-                </li>
-            </ul>
+                <ul class="portfolio-nav list">
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/technokryak.jpg" width="370" height="294" alt="Пример">
+                            <h2 class="header">Технокряк</h2>
+                            <p class="paragraf">Веб-сайт</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/neworlean-vs-goldenttar.jpg" width="370" height="294"
+                                alt="Пример">
+                            <h2 class="header">Постер New Orlean vs Golden Star</h2>
+                            <p class="paragraf">Дизайн</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/seafood.jpg" width="370" height="294" alt="Пример">
+                            <h2 class="header">Ресторан Seafood</h2>
+                            <p class="paragraf">Приложение</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/prime.jpg" width="370" height="294" alt="Пример">
+                            <h2 class="header">Проект Prime</h2>
+                            <p class="paragraf">Маркетинг</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/boxes.jpg" width="370" height="294" alt="Пример">
+                            <h2 class="header">Проект Boxes</h2>
+                            <p class="paragraf">Приложение</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/inspiration-has-no-borders.jpg" width="370" height="294"
+                                alt="Пример">
+                            <h2 class="header">Inspiration has no Borders</h2>
+                            <p class="paragraf">Веб-сайт</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/limited-edition.jpg" width="370" height="294" alt="Пример">
+                            <h2 class="header">Издание Limited Edition</h2>
+                            <p class="paragraf">Дизайн</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/Lab.jpg" width="370" height="294" alt="Пример">
+                            <h2 class="header">Проект LAB</h2>
+                            <p class="paragraf">Маркетинг</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/growing-business.jpg" width="370" height="294" alt="Пример">
+                            <h2 class="header">Growing Business</h2>
+                            <p class="paragraf">Приложение</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
-        <!-- Contact information section -->
-        <footer class="footer">
+    <!-- Contact information section -->
+    <footer class="footer">
+        <div class="container">
             <a class="link" href="index.html" lang="en"><span class="logo-link logo-link-first">Web</span><span
                     class="logo-link logo-link-footer">Studio</span> </a>
             <address>
                 <a class="footer-address link" href="https://goo.gl/maps/r1W3MAJtYw23ALMS6" target="_blank"
                     rel="noopener noreferrer">
                     г. Киев, пр-т Леси Украинки, 26</a>
-        
+
                 <a class="footer-contact-mail link" href="mailto:info@example.com">info@example.com</a>
-        
+
                 <a class="footer-phone-number link" href="tel:+3809911111111">+38 099 111 11 11</a>
             </address>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
+
 </html>
