@@ -46,7 +46,7 @@ img {
 }
 
 .container {
-    width: 1200px;
+    width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -58,6 +58,7 @@ img {
 .header-container {
     display: flex;
     align-items: center;
+    /* margin: auto; */
 }
 
 /* повешать на все секции */
@@ -96,8 +97,6 @@ img {
 
 .menu {
     background-color: #ffffff;
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
 }
 
 .navigation {
@@ -107,17 +106,15 @@ img {
 
 .menu-item {
     display: flex;
-    justify-content: flex-end border: 1px solid tomato;
-}
-
-.menu-item-point:not(:last-child) {
-    margin-right: 50px;
 }
 
 .menu-item-contacts {
     display: flex;
-    border: 1px solid tomato;
-    margin: 30px auto;
+    margin-left: auto;
+}
+
+.menu-item-point:not(:last-child) {
+    margin-right: 50px;
 }
 
 .menu-item-nav {
@@ -127,6 +124,9 @@ img {
     /*18 font-size/14 line-height=1.33 - лучше использовать множитель*/
     letter-spacing: 0.02em;
     color: inherit;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .menu-item-current {
@@ -154,11 +154,18 @@ img {
 /* FOOTER */
 .footer {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-section {
     display: flex;
 }
+
+/* .address{
+    padding: 20px;
+
+} */
 
 .footer-address {
     font-style: normal;
@@ -169,6 +176,14 @@ img {
     color: var(--text-white)
 }
 
+.footer-padding:not(:last-child){
+    margin-bottom: 9px;
+}
+.footer-padding-logo{
+    margin-bottom: 20px;
+    display: block;
+}
+
 .footer-contact-mail {
     font-style: normal;
     font-weight: 400;
@@ -176,6 +191,8 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+
+
 }
 
 .footer-phone-number {
@@ -185,6 +202,7 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+
 }
 
 /* ВОПРОС! в задании написано «С5» Текст контактов в хедере и футере меняет цвет при ховере и фокусе. но в макете не увидела цвет при наведении, поэтому задала акцентный */
@@ -223,16 +241,15 @@ img {
 .btn.hero {
     font-weight: 700;
     line-height: 1.88;
-    display: flex;
-    align-items: center letter-spacing: 0.06em;
+    /* display: flex;
+    align-items: center letter-spacing: 0.06em; */
     color: var(--text-white);
     background-color: #2196F3;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 
     padding: 10px 32px;
-    margin: 0 auto;
-    display: block;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     min-width: 200px;
+    margin-top: 30px;
 }
 
 .btn.hero:hover,
@@ -246,10 +263,11 @@ img {
     line-height: 1.63;
     letter-spacing: 0.03em;
     background-color: #F5F4FA;
+    /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); */
 
     min-width: 73px;
     padding: 6px 22px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+   
 }
 
 .nav:hover,
@@ -264,6 +282,10 @@ img {
 /*  HERO TITLE (h1) */
 .hero {
     background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: auto;
+    text-align: center;
 }
 
 .hero-header {
@@ -274,17 +296,23 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--text-white);
-
-    margin-bottom: 30px;
+    max-width: 696px;
+    margin: auto;
 }
 
 /* VALUES SECTION */
 .values {
     background-color: #ffffff;
+    padding-bottom: 0%;
 }
 
 .values-list {
     display: flex;
+    justify-content: space-between;
+}
+
+.values-padding:not(:last-child){
+    padding-right: 30px;
 }
 
 .values-header {
@@ -316,16 +344,37 @@ img {
 .our-specialt-list {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
 }
 
 .our-specialty-card {
     flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
+    margin-top: 30px;
 }
 
 .employee {
     display: flex;
     flex-wrap: wrap;
+    /* margin-left: -30px;
+    margin-top: -30px; */
+}
+
+.employees-card {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
+    margin-top: 30px;
+    /* background: #FFFFFF;
+    border-radius: 0px 0px 4px 4px; */
+    /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); */
+}
+
+.employees-border{
+    border: 1px solid #FFFFFF;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-names {
@@ -335,13 +384,18 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
 
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
 .our-team {
     background-color: #F5F4FA;
-    padding-bottom: 94px;
 }
+
+/* .our-team-border{
+    background: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+} */
 
 .our-team-position {
     font-weight: 400;
@@ -350,6 +404,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color-second);
+    padding-bottom: 30px;
 }
 
 
@@ -364,11 +419,35 @@ img {
 .portfolio-btn {
     display: flex;
     margin-bottom: 50px;
+    justify-content: center;
+}
+
+.portfolio-btn-margin{
+margin-right: 8px;
 }
 
 .portfolio-nav {
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.portfolio-margin{
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolio-border {
+    border: 1px solid #EEEEEE;
+    padding: 20px 24px;
+}
+
+.portfolio-margin:nth-child(3n){
+    margin-right: 0;
+}
+
+.portfolio-margin:nth-last-child(-n+3){
+    margin-bottom: 0;
 }
 
 .portfolio-nav .header {
