@@ -98,7 +98,7 @@ img {
 
 .menu {
     background-color: #ffffff;
-        border-bottom: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
 }
 
 .navigation {
@@ -372,6 +372,7 @@ img {
 }
 
 .employees-border{
+    width: 268px;
     border: 1px solid #FFFFFF;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
