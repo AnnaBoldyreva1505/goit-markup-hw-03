@@ -12,7 +12,6 @@
 body {
     font-family: var(--primary-font);
     color: var(--text-color-first);
-    margin: 0%;
 }
 
 /* скинули стандартные отступы для заголовка и параграфа*/
