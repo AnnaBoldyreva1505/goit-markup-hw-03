@@ -439,7 +439,9 @@ margin-right: 8px;
 }
 
 .portfolio-border {
-    border: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
     padding: 20px 24px;
 }
 
