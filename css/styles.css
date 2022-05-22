@@ -313,8 +313,8 @@ img {
     justify-content: space-between;
 }
 
-.values-padding:not(:last-child){
-    padding-right: 30px;
+.values-margin:not(:last-child){
+    margin-right: 30px;
 }
 
 .values-header {
@@ -372,11 +372,9 @@ img {
 }
 
 .employees-border{
-    /* width: 268px; */
-    border: 1px solid #FFFFFF;
     background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .our-team-names {
@@ -386,7 +384,6 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
 
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -401,7 +398,6 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color-second);
-    padding-bottom: 30px;
 }
 
 
@@ -423,24 +419,28 @@ img {
 margin-right: 8px;
 }
 
+.portfolio-btn-margin:nth-child(5n) {
+    margin-right: 0px;
+}
+
 .portfolio-nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .portfolio-margin{
+    flex-basis: calc((100% - 90px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
+}
+
+.portfolio-margin:nth-child(3n) {
+    margin-right: 0px;
 }
 
 .portfolio-border {
     border: 1px solid #EEEEEE;
     padding: 20px 24px;
-}
-
-.portfolio-margin:nth-child(3n){
-    margin-right: 0;
 }
 
 .portfolio-margin:nth-last-child(-n+3){
